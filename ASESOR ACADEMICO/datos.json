@@ -1,0 +1,14 @@
+{
+	"curso":"javascript",
+	"alumnos":
+	[
+		{
+			"nombre":"jose",
+			"nota":50
+		},
+		{
+			"nombre":"kevin",
+			"nota":100
+		}
+	]
+}
