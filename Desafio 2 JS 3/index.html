@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desafio 2 JS 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/desafio2.css" />
+    
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="img/logo-cadif1.jpg">
+        </figure>
+    </header>
+    <section>
+        <div id="contenedor-form">
+            <form>
+                <div class="div-codigo">
+                    <p>Ingrese el codigo del producto</p>
+                    <input type="text" name="codigo" class="incodigo" placeholder="Codigo del Producto" id="inputtext" >
+                </div>
+                <div class="div-nombre">
+                    <p>Ingrese el nombre del producto</p>
+                    <input type="text" name="nombre" class="innombre" placeholder="Nombre del Producto" id="inputtext">
+                </div>
+                <div class="div-existencia">
+                    <p>Ingrese la cantidad de existencia</p>
+                    <input type="text" name="existencia" class="inexistencia" placeholder="Cantidad de Existencia" id="inputtext">
+                </div>
+                <div class="div-iva">
+                    <p>El producto esta exento de Iva?</p>
+                    <input type="checkbox" name="iva" id="inputtext" class="iniva">
+                </div>
+                <div class="div-categoria">
+                    <p>Seleccione la categoria del producto</p>
+                    <select name="categoria" id="inputtext" class="incategoria">
+                        <option value="">Seleccione</option>
+                        <option value="Patatas Fritas">Patatas Fritas</option>
+                        <option value="Cervezas">Cervezas</option>
+                        <option value="Chocolates">Chocolates</option>
+                        <option value="Congelados">Congelados</option>
+                        <option value="Batidos">Batidos</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Aceite">Aceite</option>
+                    </select>
+                </div><br><br>
+                <div class="div-button">
+                    <input type="button" value="Cargar Producto" id="boton1" class="boton" >
+                    <input type="button" value="Cargar Producto" id="boton2" class="boton" >
+                </div>
+            </form>
+        </div>
+        <div class="contenedor-info">
+            <tr id="fila">
+                <td>Codigo</td>
+                <td>Nombre</td>
+                <td>Existencia</td>
+                <td>Exento</td>
+                <td>Categoria</td>
+            </tr>      
+        </div>
+        <div id="agregar">
+            <input type="button" value="Ingresar otro producto" class="boton" id="agregar2"  > 
+        </div>
+        
+    </section>
+    <footer>Elaborado por Eduardo Mejias (Si logro validar estara en mi repositorio "avilapro.github.io" En la pestaña "Desafio 2 Javascript 3")
+
+    </footer>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/lib_validaciones.js"></script>
+<script src="js/desafio2.js"></script>
+</html>

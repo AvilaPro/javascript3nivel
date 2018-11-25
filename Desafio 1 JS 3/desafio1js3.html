@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Desafio 1 JS 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/lib_validaciones.js"></script>
+</head>
+<body class="general">
+	<header class="general-header">
+		<div class="general-header-figure">
+			<figure>
+				<img src="img/logo-cadif1.jpg">
+			</figure>
+		</div>
+		<div class="general-header-nav">
+			<nav>
+				
+			</nav>
+		</div>
+	</header>
+	<section class="general-section" >
+		<h1 class="general-section-h1" name="h1" id="h1">Registro Exitoso</h1>
+		<form action="" name="form1">
+            Ingrese la cedula del alumno <br>
+            <input type="text" name="cedula" onkeypress="return validar_numero(event)" onblur="esta_vacio_cedula(cedula,errorcedula)"><br><br>
+            <label id="errorcedula" >El campo de cedula no debe estar vacio <br><br></label>  
+            Ingrese el nombre del alumno <br>
+            <input type="text" name="nombre" onblur="esta_vacio_nombre()" id=""> <br><br>
+            <label id="errornombre" >El campo de nombre no debe estar vacio <br><br></label> 
+            Ingrese la nota del alumno <br>
+            <input type="text" name="nota" onkeypress="return validarnota(event)" onblur="esta_vacio_nota()" id=""> <br><br>
+            <label id="errornota" >El campo de nota no debe estar vacio <br><br></label>
+            <label id="errornota2">La nota debe ser mayor a 0 y menor que 100 <br><br></label>  
+            <input type="button" value="Agregar"  name="btnAgregar" disabled="disabled">
+            
+		</form>
+		<div id="section1"></div>
+	</section>
+	<footer class="general-footer">
+		<p class="pfooter"> Creado por Eduardo Mejias</p>
+    </footer>
+    
+	<script src="js/desafio1js3.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Enunciado de la tarea 2 de la sección 2762
+
+Crear un nuevo archivo HTML con un formulario para registrar un producto: código del producto, nombre, existencia, precio, si esta excento de iva o no (checkbox) y su categoría (usando un select). Todos los datos son obligatorios. Colocar cada elemento de captura de datos (input o select) en un div con un class que le de una presentación a su gusto. Colocar todos los divs en un contenedor. USANDO SÓLO JQuery realice las siguientes actividades:
+
+1.- Validar que al intentar enviar el formulario, si un algún campo está vacío, agregar al div donde esta el campo con error, una class que haga que el div cambie de color. Cuando el dato sea válido, se le debe quitar al div correspondiente el class que le da la apariencia de invalido
+
+2.- Definir un arreglo vacío donde se almacenen los productos que se procesan. Crear una función constructora para instanciar un objeto Producto con todos los atributos tomados del formulario y agregar el nuevo objeto al arreglo, siempre y cuando el producto no haya sido agregado antes (buscar el código del producto en el arreglo)
+
+3.- Si los datos son válidos y el producto se puede agregar al arreglo, hacer que el div que contiene a todos los elementos de captura de datos se enconda. Mostrar otro div que contenga un mensaje de éxito y un botón que le permita al usuario volver a registrar un producto
+
+4.- Mostrar los productos agregados en el arreglo en otro div que le permita visualizar los productos que ha agregado
+
+5.- Al hacer click en el botón para registrar otro producto, esconder el div que muestra el mensaje de éxito y volver a mostrar el div para registrar un nuevo producto (con los inputs vacíos)
