@@ -1,0 +1,9 @@
+TIPOGRAFÍA:
+
+-Merienda (disponible en Google Fonts)
+
+COLORES:
+
+-negro: #333
+-rojo: #e54d27
+-gris: rgb(90,90,90) / rgb(130,130,130)

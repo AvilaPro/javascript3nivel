@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px; }
+
+.contenedor-superior {
+  background-image: url(../Recursos/img/pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  background-position: center;
+  position: relative;
+  z-index: 1; }
+
+.contenedor-tope {
+  height: 800px; }
+
+.contenedor-items {
+  height: 600px;
+  background: white; }
+
+#logo {
+  width: 100%; }
+
+.nav > li > a {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px; }
+
+#navegacion {
+  margin-top: 17px; }
+
+#naranja {
+  background-color: orange;
+  border-color: orange;
+  margin-left: 5px; }
+
+.centro {
+  text-align: center;
+  color: white; }
+
+.titulo-centro {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  font-family: "Merienda", cursive; }
+
+.titulo-boton {
+  text-align: center;
+  font-size: 19px;
+  padding: 6px 27px; }
+
+.titulo-pizzas {
+  text-align: center;
+  color: #333; }
+
+h2 {
+  font-family: "Merienda", cursive;
+  color: gris1;
+  text-align: center;
+  margin-top: 40px; }
+
+.central-espacio {
+  height: 800px;
+  background: white; }
+
+#contactenos {
+  height: 300px;
+  background: #e54d27; }
+
+#cadi{
+  height: 90px;
+  background: black;
+}
+
+.footertitulo{
+  font-family: sans-serif;
+  margin-top: 40px;
+}
+
+footer{
+  color: white;
+  font-weight: 600;
+}
+
+#direcccion{
+  margin-left: 25%;
+}
+
+#Horarios{
+  margin-top: 51px;
+}
+#mapa{
+  margin-top: 6%;
+}

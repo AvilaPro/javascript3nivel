@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clase 3_2 JS 3</h1>
+</body>
+    <script>
+        //creamos el objeto XMLHttpRequest
+        var ajax = new XMLHttpRequest();
+
+        ajax.onreadystatechange = function(){
+            if(this.readyState==4){
+                console.log(this.status);
+                console.log(this.responseText);
+            }
+        }
+        let url="http://www.cne.gov.ve/web/registro_electoral";
+        ajax.open("GET",url+"/ce.php?nacionalidad=V&cedula=19591303",true);
+        ajax.send();
+    </script>
+    
+</html>

@@ -1,0 +1,30 @@
+.contenedor-superior {
+  background-image: url(../Recursos/img/pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+  position: relative;
+  z-index: 1; }
+
+#logo {
+  width: 100%; }
+
+.nav > li > a {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px; }
+
+#navegacion {
+  margin-top: 17px; }
+
+#naranja {
+  background-color: orange;
+  border-color: orange;
+  margin-left: 5px; }
+
+#titulo {
+  text-align: center;
+  font-size: 100px;
+  color: white; }
