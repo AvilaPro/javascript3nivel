@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Desafio2 framework CSS </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <div class="container-fluid contenedor-superior">
+        <div class="container-fluid contenedor-navegacion">
+            <div class="contenedor-tope">
+                <header>
+                        <div class="col-md-4">
+                            <div class="col-md-12">
+                                <div class="col-md-4 col-md-offset-1">
+                                        <figure>
+                                            <img src="img/logo-pizzeria.png "title="Logo" alt="Logo pizzeria" id="logo">
+                                        </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                            <div class="col-md-6 col-md-offset-1">
+                                <nav>
+                                    <ul class="nav navbar-nav navbar-right" id="navegacion">
+                                        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Menú</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-picture"></span> Galería</a></li>
+                                        <li><a href="#" class="btn btn-warning" id="naranja"><span class="glyphicon glyphicon-map-marker"></span> Ubicacion y contacto</a></li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        <!--Barra de navegacion-->
+                </header>
+            
+                <div class="row">
+                    <div class="col-md-12 centro">
+                        <h1 class="titulo-centro">~ Pizzería ~</h1>
+                        <button type="button" 
+                            class="btn btn-success titulo-boton"
+                            id="boton-menu">
+                            Ver menú
+                        </button>
+                    </div>
+                </div>
+            </div><!-- Fin de la divison interna-->
+            <div class="container">
+                <div class="contenedor-items">
+                    <div class="row">
+                        <h2>- Menú Principal -</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" id="1">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <img class="oculta" src="img/slide.jpg">
+                            <h3 class="titulo-pizzas">Margarita</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" 
+                                    class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+                        </div>
+                        <div class="col-md-4" id="2">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <img class="oculta" src="img/slide.jpg">
+                            <h3 class="titulo-pizzas">Napolitana</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+
+                        </div>
+                        <div class="col-md-4" id="3">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <h3 class="titulo-pizzas">4 Quesos</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4" id="4">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <h3 class="titulo-pizzas">Peperoni</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+                        </div>
+                        <div class="col-md-4" id="5">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <h3 class="titulo-pizzas">Prosciutto</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+
+                        </div>
+                        <div class="col-md-4" id="6">
+                            <img class="img-responsive" src="img/tipo-pizza.jpg">
+                            <h3 class="titulo-pizzas">Veneziana</h3>
+                            <p class="titulo-pizzas">Mozarella,albahaca</p>
+                            <button type="button" class="btn btn-success btn-block central-boton">Agregar al carrito</button>
+
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div><!--Fin Navegacion-->
+    </div><!--Fin contenedor superior-->
+    <div class="container central-espacio" >
+
+    </div>
+
+    <div class="container-fluid" id="contactenos">
+        <footer>
+                
+            <div class="col-md-4">
+                <h2 class="footertitulo">Datos de contacto</h2>
+                <div id="direcccion">
+                    <h3>Direccion</h3>
+                    <p>Av.Los rosales 122</p>
+                    <p>28021, Madrid</p>
+                    <p>infomisitio@.com\\tell:914-123-456</p>
+                </div>
+            </div>
+            <div class="col-md-4" id="Horarios">
+                    <h3 class="footertitulo">Horarios</h3>
+                    <p>Lunes-Viernes 7:00AM-10:00PM</p>
+                    <p>Sabado 9:00AM-10:00PM</p>
+                    <p>Domingo 8:00PM-11:00PM</p>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.624207064415!2d-69.3533635!3d10.0657765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac84de4d8ad2a5c7!2sCadi+f1!5e0!3m2!1ses!2sve!4v1543228959971" height="240" width="350" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>
+            </div>
+        </footer>
+    </div>
+    <div class="row">
+        <div class="container-fluid" id="cadi">
+            <h3 class="centro">CADIF1. Todos los derechos reservados</h3>
+        </div>
+    </div>
+    <script src="js/clase3_1.js"></script>
+</body>
+</html>
