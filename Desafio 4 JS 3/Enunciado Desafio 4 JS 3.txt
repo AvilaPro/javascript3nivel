@@ -1,0 +1,36 @@
+Enunciado de la tarea 4 de la secci�n 2762
+
+Realizar las siguientes actividades tomando en cuenta las APIS 
+que estan listadas en la URL 
+http://www.enrique7mc.com/2016/05/lista-apis-publicas/. 
+Se pueden usar varias APIS si lo desea. En el HTML mostrar 
+informaci�n del API a la cual se estan conectando y que 
+resultados se esperan obtener en cada DIV :
+
+1.- Hacer una funci�n que utilizando XMLHttpRequest se 
+conecte con alguna de las APIS utilizando el m�todo GET
+y que no nececesite par�metros. Mostrar el resultado de 
+una forma legible para el usuario en un DIV al cargarse la p�gina
+
+2.- Hacer una funci�n que utilizando JQuery se conecte 
+con alguna de las APIS utilizando el m�todo GET y que 
+no nececesite par�metros. Mostrar el resultado de una 
+forma legible para el usuario en un DIV al cargarse la p�gina (ready)
+
+3.- Hacer una funci�n que utilizando JQuery se conecte 
+con otra de las APIS utilizando el m�todo GET y que no 
+nececesite par�metros. Mostrar el resultado de forma 
+legible en otro DIV cuando se haga click en un bot�n
+
+4.- Hacer una funci�n que utilizando JQuery se conecte 
+con otra de las APIS utilizando el m�todo GET pero que 
+necesite un par�metro. Solicitar el par�metro al usuario 
+usando un input type text. Mostrar el resultado de forma 
+legible en otro DIV cuando se haga click en un bot�n
+
+5.- Hacer una funci�n que utilizando JQuery se conecte 
+con otra de las APIS utilizando el m�todo POST y que 
+necesite un par�metro. Solicitar el par�metro al usuario 
+usando uno (o varios dependiendo del caso) input(s) type text.
+Mostrar el resultado de forma legible en otro DIV cuando se 
+haga click en un bot�n

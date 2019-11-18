@@ -1,0 +1,13 @@
+Enunciado de la tarea 3 de la sección 2762
+
+Para simular el famoso juego de cartas llamado MEMORIA, en el cual se colocan varias cartas boca abajo y cada jugador voltea 2 cartas, si son iguales, gana esas cartas, de lo contrario se vuelven a voltear para volver a intentarlo. Crear un archivo HTML con una tabla que tenga 4 filas y 4 columnas. Buscar en internet 8 imagenes cualquiera. Colocar 2 veces en lugares aleatorios de la tabla cada una de las 8 imagenes seleccionadas (es decir, tendran 16 imagenes). Las imagenes deben estar ocultas y en su lugar debe aparecer otra imagen (la misma imagen en cada una de las celdas). Luego, usando las funciones de JQuery realizar las siguientes actividades:
+
+1.- Programar que al hacer click sobre una imagen que representa la carta volteada, esconder la imagen de la carta volteada y mostrar la imagen que ocupa ese lugar en la tabla (utilizando this)
+
+2.- Programar que al hacer click sobre una otra imagen que representa la carta volteada, esconder la imagen y mostrar la imagen que ocupa ese lugar en la tabla (igual que en el objetivo anterior). Si la carta que aparece es igual que la carta a la que hizo click la primera vez, mostrar un mensaje que diga "acertaste", en caso contrario mostrar un mensaje que diga "fallaste" (comparar los src de las imagenes)
+
+3.- Si el usuario acierta un par de cartas, incrementar en 1 un contador, que debe mostrarse en algun lugar de la página (las imagenes se deben quedar volteadas)
+
+4.- Si el usuario falla, luego de cerrar el alert que mostro el mensaje "fallaste", esconder las 2 imagenes que se mostraron y volver a mostrar la imagen de la carta volteada
+
+5.- Cuando el usuario haya encontrado las 8 parejas (cuando el contador haya llegado a 8), se debe mostrar un mensaje que indique al usuario que ganó el juego

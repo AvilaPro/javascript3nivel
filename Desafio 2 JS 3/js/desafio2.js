@@ -105,7 +105,7 @@ $("#boton1").click(function(){
 
 })
 $("#boton2").click(function(){
-    
+    var comparacion = false;
     if($(".incodigo").val()==""){
         $(".div-codigo").toggleClass("error");
         return true;
@@ -130,62 +130,77 @@ $("#boton2").click(function(){
                 }else{
                     $(".div-categoria").removeClass("error");
                 }
-                let cod = $(".incodigo").val();
-                let nom = $(".innombre").val();
-                let exi = $(".inexistencia").val();
-                let iv = $(".iniva")[0].chequed;
-                let categ = $(".incategoria").val();
+                // let codi = "";
+                // codi = $(".incodigo").val();
+                let codig = $(".incodigo").val();
 
-                console.log("cod:"+cod);
+                console.log("cod:"+codig);
                 
+                console.log("comparacion antes del for: "+comparacion);
 
-                for(i=0;i<Productos.length;i++){
-                    console.log("prod:"+Productos.codigo[i]);
-
-                    if(cod == Productos.codigo[i]){
-                        alert("El producto ya fue agregado");
+                for(i=0;i<Productos.codigo.length;i++){
+                    // let compar = parseInt();
+                    // console.log(" cod prod:"+compar+"en la posicion i: "+i);
+                    if(codig == Productos.codigo[i]){
+                        var comparacion = false;
                     }else{
-                        Productos.codigo.push(cod);
-                        Productos.nombre.push(nom);
-                        Productos.existencia.push(exi);
-                        Productos.iva.push(iv);
-                        Productos.categoria.push(categ);
-
-                        console.log(Productos);
-                        var tr_nuevo = document.createElement("tr");
-                        var td_nuevo1 = document.createElement("td");
-                        var td_nuevo2 = document.createElement("td");
-                        var td_nuevo3 = document.createElement("td");
-                        var td_nuevo4 = document.createElement("td");
-                        var td_nuevo5 = document.createElement("td");
-                        
-
-                        var texto1 = document.createTextNode(cod);
-                        var texto2 = document.createTextNode(nom);
-                        var texto3 = document.createTextNode(exi);
-                        var texto4 = document.createTextNode(iv);
-                        var texto5 = document.createTextNode(categ);
-                        
-                        td_nuevo1.appendChild(texto1);
-                        td_nuevo2.appendChild(texto2);
-                        td_nuevo3.appendChild(texto3);
-                        td_nuevo4.appendChild(texto4);
-                        td_nuevo5.appendChild(texto5);
-
-                        tr_nuevo.appendChild(td_nuevo1);
-                        tr_nuevo.appendChild(td_nuevo2);
-                        tr_nuevo.appendChild(td_nuevo3);
-                        tr_nuevo.appendChild(td_nuevo4);
-                        tr_nuevo.appendChild(td_nuevo5);
-
-                        $(".contenedor-info").append(tr_nuevo);
-                        $("#agregar").show();
-                        $("#contenedor-form").hide();
-                        
+                        if(codig != Productos.codigo[i]){
+                            var comparacion = true;
+                        }
                     }
                 }
-                
+                console.log("comparacion luego del for: "+comparacion);
+                if(comparacion){
 
+                    $(".div-codigo").removeClass("error");
+
+                    let cod = $(".incodigo").val();
+                    let nom = $(".innombre").val();
+                    let exi = $(".inexistencia").val();
+                    let iv = $(".iniva")[0].chequed;
+                    let categ = $(".incategoria").val();
+                    
+                    Productos.codigo.push(cod);
+                    Productos.nombre.push(nom);
+                    Productos.existencia.push(exi);
+                    Productos.iva.push(iv);
+                    Productos.categoria.push(categ);
+
+                    console.log(Productos);
+                    var tr_nuevo = document.createElement("tr");
+                    var td_nuevo1 = document.createElement("td");
+                    var td_nuevo2 = document.createElement("td");
+                    var td_nuevo3 = document.createElement("td");
+                    var td_nuevo4 = document.createElement("td");
+                    var td_nuevo5 = document.createElement("td");
+                    
+
+                    var texto1 = document.createTextNode(cod);
+                    var texto2 = document.createTextNode(nom);
+                    var texto3 = document.createTextNode(exi);
+                    var texto4 = document.createTextNode(iv);
+                    var texto5 = document.createTextNode(categ);
+                    
+                    td_nuevo1.appendChild(texto1);
+                    td_nuevo2.appendChild(texto2);
+                    td_nuevo3.appendChild(texto3);
+                    td_nuevo4.appendChild(texto4);
+                    td_nuevo5.appendChild(texto5);
+
+                    tr_nuevo.appendChild(td_nuevo1);
+                    tr_nuevo.appendChild(td_nuevo2);
+                    tr_nuevo.appendChild(td_nuevo3);
+                    tr_nuevo.appendChild(td_nuevo4);
+                    tr_nuevo.appendChild(td_nuevo5);
+
+                    $(".contenedor-info").append(tr_nuevo);
+                    $("#agregar").show();
+                    $("#contenedor-form").hide();
+                }
+                if(!comparacion){
+                    alert("El producto ya fue agregado");
+                    $(".div-codigo").toggleClass("error");
+                }   
 })
 
 $("#agregar2").click(function(){
