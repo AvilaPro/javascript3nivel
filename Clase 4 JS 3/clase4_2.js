@@ -32,7 +32,7 @@ $("#cargar").click(function(){
         complete:function(){
             $("#loading").hide();
         },
-        timeout : 3000,
+        timeout : 5000,
         type    :"get",
         dataType:"JSON"
     })
